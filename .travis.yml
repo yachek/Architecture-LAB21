@@ -4,7 +4,8 @@ os: windows
 
 install:
 - go get -u gopkg.in/check.v1
+- make install
 
 script:
-- make.exe
-- make.exe test
+- make
+- make test
