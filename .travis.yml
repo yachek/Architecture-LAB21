@@ -2,9 +2,13 @@ language: go
 
 os: windows
 
+before_install:
+- export PATH=/C/Program Files (x86)/GnuWin32/bin:$PATH
+- export MAKE=mingw32-make
+
 install:
 - go get -u gopkg.in/check.v1
 
 script:
-- C:\"Program Files (x86)"\GnuWin32\bin\make.exe
-- C:\"Program Files (x86)"\GnuWin32\bin\make.exe test
+- make
+- make test
