@@ -11,6 +11,8 @@ func Test(t *testing.T) { TestingT(t) }
 
 type TestSuite struct{}
 
+var _ = Suite(&TestSuite{})
+
 func (s *TestSuite) TestPositive(c *C) {
 	res, err := PostfixToInfix("2 2 +")
 	c.Assert(err, IsNil)
