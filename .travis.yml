@@ -4,7 +4,7 @@ os: windows
 
 install:
 - go get -u gopkg.in/check.v1
-- make install
+- choco install make
 
 script:
 - make
