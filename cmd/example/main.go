@@ -12,7 +12,7 @@ func main() {
 	input := strings.Join(os.Args[1:], " ")
 	res, err := go21.PostfixToInfix(input)
 	if err != nil {
-		fmt.Println(rr)
+		fmt.Println(err)
 	}
 	fmt.Println(res)
 }
