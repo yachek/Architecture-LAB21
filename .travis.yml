@@ -1,5 +1,7 @@
 language: go
 
+os: windows
+
 install:
   go get -u gopkg.in/check.v1
   git tag -a v1 -m "Version 1.0"
