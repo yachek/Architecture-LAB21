@@ -8,11 +8,11 @@ import (
 )
 
 func main() {
-	//fmt.Println("Build version: " + version)
+	fmt.Println("Build version: " + version)
 	input := strings.Join(os.Args[1:], " ")
 	res, err := go21.PostfixToInfix(input)
 	if err != nil {
-		fmt.Println(err)
+		fmt.Println(rr)
 	}
 	fmt.Println(res)
 }
