@@ -6,5 +6,5 @@ install:
 - go get -u gopkg.in/check.v1
 
 script:
-- C:\Program Files (x86)\GnuWin32\bin\make.exe
-- C:\Program Files (x86)\GnuWin32\bin\make.exe test
+- C:\"Program Files (x86)"\GnuWin32\bin\make.exe
+- C:\"Program Files (x86)"\GnuWin32\bin\make.exe test
