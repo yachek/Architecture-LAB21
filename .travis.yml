@@ -3,7 +3,7 @@ language: go
 os: windows
 
 before_install:
-- export PATH=/C/Program Files (x86)/GnuWin32/bin:$PATH
+- export PATH=/C/tools/msys64/mingw64/bin:$PATH
 - export MAKE=mingw32-make
 
 install:
