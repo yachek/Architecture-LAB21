@@ -57,7 +57,7 @@ func testArray(arr []string) error {
 	for i := 0; i < len(arr); i++ {
 		for j := 0; j < len(arr[i]); j++ {
 			if !strings.ContainsAny(string(arr[i][j]), operators+digits) {
-				return fmt.Errorf("Input error: the only allowed characters in input exprression are digits and +, -, *, /, ^")
+				return fmt.Errorf("Input error: the only allowed characters in input exprression are digits and math operators")
 			}
 		}
 		if strings.ContainsAny(arr[i], operators) &&
