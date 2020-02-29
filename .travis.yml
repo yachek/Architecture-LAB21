@@ -2,12 +2,9 @@ language: go
 
 os: windows
 
-before_install:
-- export MAKE=mingw32-make
-
 install:
 - go get -u gopkg.in/check.v1
 
 script:
-- make
-- make test
+- make.exe
+- make.exe test
