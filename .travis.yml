@@ -1,0 +1,9 @@
+language: go
+
+install:
+  go get -u gopkg.in/check.v1
+  git tag -a v1 -m "Version 1.0"
+
+script:
+  make
+  make test
